@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/design">
+<TextView
+    android:id="@+id/edtpp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Edit Profile Picture"
+    android:textSize="20sp"
+    android:paddingTop="10dp"
+    android:paddingLeft="20dp"
+    android:paddingBottom="10dp"
+    android:drawableLeft="@drawable/accccc"
+    android:drawablePadding="15dp"
+    android:layout_marginTop="20dp"
+    android:textColor="@color/black"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit  Name"
+        android:id="@+id/edit_name"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/ic_baseline_edit_24"
+        android:drawableTint="@color/black"
+        android:drawablePadding="15dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:clickable="true"
+        android:textColor="@android:color/black"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:padding="10dp"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:id="@+id/et_name"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_edit_name"
+        android:text="Update Name"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:layout_margin="4dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit school  Name"
+        android:id="@+id/edit_postscl"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/ic_baseline_school_24"
+        android:drawablePadding="15dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:clickable="true"
+        android:textColor="@android:color/black"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="school Name"
+        android:padding="10dp"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:id="@+id/et_scl"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_edit_scl"
+        android:text="Update school Name"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:layout_margin="4dp"
+        android:visibility="gone"/>
+
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit  Phone no"
+        android:id="@+id/edit_post_phn"
+        android:layout_marginBottom="10dp"
+         android:drawablePadding="15dp"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+         android:paddingTop="10dp"
+         android:paddingLeft="20dp"
+         android:paddingBottom="10dp"
+         android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:clickable="true"
+        android:textColor="@android:color/black"
+        />
+
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:paddingTop="10dp"-->
+<!--        android:paddingLeft="20dp"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:text="privacy"-->
+<!--        />-->
+
+</LinearLayout>

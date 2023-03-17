@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".NotificationActivity">
+
+    <TextView
+        android:id="@+id/bk"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="New notifications"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:padding="8dp"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:fontFamily="@font/gilroyfont"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_new"
+        android:padding="10dp"
+        tools:listitem="@layout/new_layout"
+        android:scrollbars="vertical"
+        />
+
+</LinearLayout>

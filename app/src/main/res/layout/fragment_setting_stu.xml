@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SettingStu">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:fontFamily="@font/gilroyfont"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Settings"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginTop="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:scrollbars="vertical"
+          >
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/gilroyfont"
+              android:text="Accounts"
+              android:gravity="start"
+              android:paddingLeft="28dp"
+              android:textColor="@color/black"
+              android:textSize="22sp"/>
+          <TextView
+              android:id="@+id/editProfile"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:paddingTop="15dp"
+              android:paddingBottom="10dp"
+              android:drawableLeft="@drawable/accccc"
+              android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+              android:drawablePadding="20dp"
+              android:drawableTint="@color/black"
+              android:paddingLeft="35dp"
+              android:paddingRight="20dp"
+              android:text="My profile"
+              android:textColor="@color/black"
+              android:textSize="16sp"
+              />
+          <TextView
+              android:id="@+id/changepass"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="15dp"
+              android:paddingBottom="10dp"
+              android:drawableLeft="@drawable/ic_baseline_lock_24"
+              android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+              android:drawablePadding="20dp"
+              android:drawableTint="@color/black"
+              android:paddingLeft="35dp"
+              android:paddingRight="20dp"
+              android:text="Change password"
+              android:textColor="@color/black"
+              android:textSize="16sp"
+              />
+          <TextView
+              android:id="@+id/forgetpass"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="15dp"
+              android:paddingBottom="10dp"
+              android:drawableLeft="@drawable/ic_baseline_lock_24"
+              android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+              android:drawablePadding="20dp"
+              android:drawableTint="@color/black"
+              android:paddingLeft="35dp"
+              android:paddingRight="20dp"
+              android:text="Forget password"
+              android:textColor="@color/black"
+              android:textSize="16sp"
+              />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#9F9D9D"
+    android:layout_marginTop="30dp"
+    />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:layout_marginBottom="15dp"
+              android:fontFamily="@font/gilroyfont"
+              android:text="Activities"
+              android:gravity="start"
+              android:paddingLeft="28dp"
+              android:textColor="@color/black"
+              android:textSize="22sp"
+              />
+          <TextView
+              android:id="@+id/noti"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:drawableLeft="@drawable/ic_baseline_notifications_24"
+              android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+              android:drawableTint="@color/black"
+              android:text=""
+              android:textColor="@color/black"
+              android:drawablePadding="20dp"
+              android:paddingLeft="35dp"
+              android:paddingRight="20dp"
+              android:paddingTop="15dp"
+              android:paddingBottom="10dp"
+              android:textSize="16sp"/>
+          <TextView
+              android:id="@+id/annn"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="15dp"
+              android:paddingBottom="10dp"
+              android:drawableLeft="@drawable/ic_baseline_notification_important_24"
+              android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+              android:drawableTint="@color/black"
+              android:text="Show Announcement"
+              android:textColor="@color/black"
+              android:drawablePadding="20dp"
+              android:paddingLeft="35dp"
+              android:paddingRight="20dp"
+              android:textSize="16sp"/>
+
+          <TextView
+              android:id="@+id/about"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="15dp"
+              android:paddingBottom="10dp"
+              android:drawableLeft="@drawable/ic_baseline_info_24"
+              android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+              android:drawableTint="@color/black"
+              android:text="About TAS"
+              android:textColor="@color/black"
+              android:drawablePadding="20dp"
+              android:paddingLeft="35dp"
+              android:paddingRight="20dp"
+              android:textSize="16sp"/>
+          <TextView
+              android:id="@+id/dev"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="15dp"
+              android:paddingBottom="10dp"
+              android:drawableLeft="@drawable/ic_baseline_info_24"
+              android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+              android:drawableTint="@color/black"
+              android:text="About developer"
+              android:textColor="@color/black"
+              android:drawablePadding="20dp"
+              android:paddingLeft="35dp"
+              android:paddingRight="20dp"
+              android:textSize="16sp"/>
+          <TextView
+              android:id="@+id/pp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="15dp"
+              android:paddingBottom="10dp"
+              android:drawableLeft="@drawable/ic_baseline_privacy_tip_24"
+              android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+              android:drawableTint="@color/black"
+              android:text="Privacy Policy"
+              android:textColor="@color/black"
+              android:drawablePadding="20dp"
+              android:paddingLeft="35dp"
+              android:paddingRight="20dp"
+              android:textSize="16sp"/>
+          <TextView
+              android:id="@+id/logout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="15dp"
+              android:paddingBottom="10dp"
+              android:drawableLeft="@drawable/exit"
+              android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+              android:drawableTint="@color/black"
+              android:text="Logout"
+              android:textColor="@color/black"
+              android:drawablePadding="20dp"
+              android:paddingLeft="35dp"
+              android:paddingRight="20dp"
+              android:textSize="16sp"/>
+
+
+      </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/design"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download image"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/download_tv_post"
+        android:textSize="20sp"
+        android:drawablePadding="10dp"
+
+        android:drawableTint="@color/black"
+        android:drawableLeft="@drawable/ic_baseline_arrow_drop_down_circle_24"
+        android:clickable="true"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit  Description"
+        android:id="@+id/edit_post"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:drawableTint="@color/black"
+        android:drawableLeft="@drawable/ic_baseline_edit_24"
+        android:drawablePadding="10dp"
+        android:padding="5dp"
+        android:clickable="true"
+        android:textColor="@android:color/black"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description...."
+        android:padding="10dp"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:id="@+id/et_caption"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_edit_caption"
+        android:text="Update post"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:layout_margin="4dp"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy post url"
+        android:padding="5dp"
+        android:id="@+id/copyurl_tv_post"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_baseline_content_copy_24"
+        android:drawablePadding="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share Post"
+        android:id="@+id/share_tv_post"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/ic_baseline_share_24"
+        android:drawablePadding="10dp"
+        android:clickable="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete  Post"
+        android:id="@+id/delete_tv_post"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/ic_baseline_delete_24"
+        android:visibility="gone"
+        android:clickable="true"
+        android:textColor="@color/red"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report  Post"
+        android:id="@+id/report_tv_post"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/ic_baseline_report_24"
+        android:visibility="visible"
+        android:clickable="true"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Block  User"
+        android:id="@+id/block_tv_post"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/ic_baseline_block_24"
+        android:visibility="visible"
+        android:clickable="true"
+        android:drawableTint="@color/black"
+        android:textColor="@color/black"
+        />
+
+
+</LinearLayout>
