@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".User">
+
+    <SearchView
+        android:paddingRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:theme="@style/search"
+        android:id="@+id/sss"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="search users here"
+        android:background="@drawable/searchbg"
+        android:focusableInTouchMode="true"
+        android:layout_gravity="center"
+        android:iconifiedByDefault="false"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/users_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/raw_user"
+        android:layout_marginTop="0dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
