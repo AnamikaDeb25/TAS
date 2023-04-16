@@ -17,7 +17,7 @@
         android:xlargeScreens="true" />
 
     <application
-        android:name="com.TAS.tas.NetworkSecurity"
+        android:name=".NetworkSecurity"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -25,69 +25,72 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TAS">
         <activity
-            android:name="com.TAS.tas.dev"
+            android:name=".dev"
             android:exported="true" />
         <activity
-            android:name="com.TAS.tas.PrivacyPolicy"
-            android:exported="true"></activity>
-        <activity
-            android:name="com.TAS.tas.Starting"
+            android:name=".PrivacyPolicy"
             android:exported="true" />
         <activity
-            android:name="com.TAS.tas.Tas"
+            android:name=".TermsAndConditionsActivity"
             android:exported="true" />
         <activity
-            android:name="com.TAS.tas.NotificationActivity"
+            android:name=".Starting"
             android:exported="true" />
         <activity
-            android:name="com.TAS.tas.ShowAnnouncements"
+            android:name=".Tas"
             android:exported="true" />
         <activity
-            android:name="com.TAS.tas.Announcement"
+            android:name=".NotificationActivity"
             android:exported="true" />
         <activity
-            android:name="com.TAS.tas.SignOut"
+            android:name=".ShowAnnouncements"
             android:exported="true" />
         <activity
-            android:name="com.TAS.tas.ForgetPassword"
+            android:name=".Announcement"
             android:exported="true" />
         <activity
-            android:name="com.TAS.tas.ChangePassword"
+            android:name=".SignOut"
             android:exported="true" />
         <activity
-            android:name="com.TAS.tas.CommentsActivity"
+            android:name=".ForgetPassword"
             android:exported="true" />
         <activity
-            android:name="com.TAS.tas.OtpVerificationteachers"
+            android:name=".ChangePassword"
             android:exported="true" />
         <activity
-            android:name="com.TAS.tas.ImageViewOfChat"
+            android:name=".CommentsActivity"
             android:exported="true" />
         <activity
-            android:name="com.TAS.tas.SendImage"
+            android:name=".OtpVerificationteachers"
             android:exported="true" />
         <activity
-            android:name="com.TAS.tas.ChatActivity"
+            android:name=".ImageViewOfChat"
             android:exported="true" />
         <activity
-            android:name="com.TAS.tas.EditProfile"
+            android:name=".SendImage"
             android:exported="true" />
         <activity
-            android:name="com.TAS.tas.Sbottomnavi"
+            android:name=".ChatActivity"
             android:exported="true" />
         <activity
-            android:name="com.TAS.tas.Tbottomnavi"
+            android:name=".EditProfile"
             android:exported="true" />
         <activity
-            android:name="com.TAS.tas.TeacherLogin"
+            android:name=".Sbottomnavi"
             android:exported="true" />
         <activity
-            android:name="com.TAS.tas.TeacherSignin"
+            android:name=".Tbottomnavi"
             android:exported="true" />
-        <activity android:name="com.TAS.tas.studentSignin" />
-        <activity android:name="com.TAS.tas.Student_login" />
         <activity
-            android:name="com.TAS.tas.MainActivity"
+            android:name=".TeacherLogin"
+            android:exported="true" />
+        <activity
+            android:name=".TeacherSignin"
+            android:exported="true" />
+        <activity android:name=".studentSignin" />
+        <activity android:name=".Student_login" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -95,19 +98,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.TAS.tas.ImageViewofprofilepic" />
-        <activity android:name="com.TAS.tas.PostActivity" />
-        <activity android:name="com.TAS.tas.ImageviewForPostpic" />
-        <activity android:name="com.TAS.tas.ShowUserProfile" />
-        <activity android:name="com.TAS.tas.OtpVerificationStudent" />
-        <activity android:name="com.TAS.tas.EditProfilestu" />
+        <activity android:name=".ImageViewofprofilepic" />
+        <activity android:name=".PostActivity" />
+        <activity android:name=".ImageviewForPostpic" />
+        <activity android:name=".ShowUserProfile" />
+        <activity android:name=".OtpVerificationStudent" />
+        <activity android:name=".EditProfilestu" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
         <service
-            android:name="com.TAS.tas.FirebaseMessaging"
+            android:name=".FirebaseMessaging"
             android:enabled="true"
             android:exported="true"
             android:permission="TODO">

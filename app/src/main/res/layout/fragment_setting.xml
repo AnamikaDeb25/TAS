@@ -207,6 +207,21 @@
               android:paddingRight="20dp"
               android:textSize="16sp"/>
           <TextView
+              android:id="@+id/tnc"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="15dp"
+              android:paddingBottom="10dp"
+              android:drawableLeft="@drawable/ic_baseline_privacy_tip_24"
+              android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+              android:drawableTint="@color/black"
+              android:text="Terms and Conditions"
+              android:textColor="@color/black"
+              android:drawablePadding="20dp"
+              android:paddingLeft="35dp"
+              android:paddingRight="20dp"
+              android:textSize="16sp"/>
+          <TextView
               android:id="@+id/logout"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"

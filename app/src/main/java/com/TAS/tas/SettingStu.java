@@ -62,6 +62,15 @@ public class SettingStu extends Fragment {
                 startActivity(new Intent(getActivity(),PrivacyPolicy.class));
             }
         });
+
+        TextView tnc = (TextView) view.findViewById(R.id.tncs);
+        tnc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(),TermsAndConditionsActivity.class));
+            }
+        });
+
          annn = (TextView) view.findViewById(R.id.annn);
          newtv = (TextView) view.findViewById(R.id.noti);
 
