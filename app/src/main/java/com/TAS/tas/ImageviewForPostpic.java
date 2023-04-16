@@ -12,6 +12,7 @@ import com.github.chrisbanes.photoview.PhotoView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
@@ -40,10 +41,10 @@ public class ImageviewForPostpic extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN | WindowManager.LayoutParams.FLAG_FULLSCREEN);
         String url = getIntent().getStringExtra("url");
         try {
-            Picasso.get().load(url).placeholder(R.drawable.ic_baseline_image_24).into(imageView);
+            Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.ic_baseline_image_24).into(imageView);
         }
         catch (Exception e){
-            Picasso.get().load(R.drawable.ic_baseline_image_24).into(imageView);
+            Picasso.get().load(R.drawable.ic_baseline_image_24).networkPolicy(NetworkPolicy.OFFLINE).fit().into(imageView);
         }
         btnback.setOnClickListener(new View.OnClickListener() {
             @Override

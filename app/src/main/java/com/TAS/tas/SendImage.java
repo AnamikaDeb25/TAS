@@ -28,6 +28,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.jpardogo.android.googleprogressbar.library.GoogleProgressBar;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
@@ -75,7 +76,7 @@ public class SendImage extends AppCompatActivity {
             Toast.makeText(this, "error", Toast.LENGTH_SHORT).show();
         }
 
-        Picasso.get().load(url).into(imageView);
+        Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).fit().into(imageView);
         imageurl = Uri.parse(url);
 
         rootRef1 = database.getReference("Chats").child(sender_uid).child(receiver_uid);

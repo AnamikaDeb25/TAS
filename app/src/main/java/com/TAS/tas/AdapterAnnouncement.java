@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -54,7 +55,7 @@ public class AdapterAnnouncement extends RecyclerView.Adapter<AdapterAnnouncemen
         holder.announcement.setText(announcement);
 
         try {
-            Picasso.get().load(userImage).placeholder(R.drawable.pict).into(holder.pic);
+            Picasso.get().load(userImage).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.pict).into(holder.pic);
         }
         catch (Exception e){ }
 

@@ -57,6 +57,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
@@ -95,6 +96,8 @@ public class home extends Fragment implements View.OnClickListener {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         recyclerView = (RecyclerView) view.findViewById(R.id.rv_posts);
         recyclerView.setHasFixedSize(true);
+        recyclerView.setItemViewCacheSize(20);
+        recyclerView.setDrawingCacheEnabled(true);
         LinearLayoutManager linearLayoutManager =  new LinearLayoutManager(getActivity());
         linearLayoutManager.setStackFromEnd(true);
         linearLayoutManager.setReverseLayout(true);
@@ -135,10 +138,10 @@ public class home extends Fragment implements View.OnClickListener {
                 if (userprofile != null) {
                     String url = userprofile.image;
                     try {
-                        Picasso.get().load(url).placeholder(R.drawable.pict).into(circleImageView);
+                        Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.pict).into(circleImageView);
                     }
                     catch (Exception e){
-                        Picasso.get().load(R.drawable.pict).into(circleImageView);
+                        Picasso.get().load(R.drawable.pict).networkPolicy(NetworkPolicy.OFFLINE).fit().into(circleImageView);
                     }
                 }
             }

@@ -32,6 +32,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import java.text.SimpleDateFormat;
@@ -135,7 +136,7 @@ public class CommentsActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         checkOnlineStatus("online");
-        Picasso.get().load(url).placeholder(R.drawable.pict).into(usernameImageview);
+        Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.pict).into(usernameImageview);
         usernameTextview.setText(name);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();

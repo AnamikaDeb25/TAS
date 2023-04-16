@@ -15,6 +15,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 import java.util.List;
 public class AdapterUsers extends RecyclerView.Adapter<AdapterUsers.MyHolder>{
@@ -52,9 +53,7 @@ public class AdapterUsers extends RecyclerView.Adapter<AdapterUsers.MyHolder>{
         holder.mEmailTv.setText(userEmail);
         //  holder.mSchool.setText(userSchool);
         try {
-            Picasso.get().load(userImage)
-                    .placeholder(R.drawable.pict)
-                    .into(holder.mAvatarTv);
+            Picasso.get().load(userImage).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.pict).into(holder.mAvatarTv);
         }
         catch (Exception e){ }
         checkIsBlocked(hisUID,holder,position);

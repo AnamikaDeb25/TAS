@@ -45,6 +45,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
@@ -260,7 +261,7 @@ public class ShowUserProfile extends AppCompatActivity {
                      Email = userprofile.email;
                      Phn = userprofile.phno;
                      link = userprofile.getImage();
-                    Picasso.get().load(link).placeholder(R.drawable.pict).into(img);
+                    Picasso.get().load(link).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.pict).into(img);
                     nname.setText(Name);
                     eemail.setText(Email);
                   //  pphone.setText("Mobile: "+Phn);

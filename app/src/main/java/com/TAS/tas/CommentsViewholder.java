@@ -16,6 +16,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 public class CommentsViewholder extends RecyclerView.ViewHolder {
@@ -48,7 +49,7 @@ public class CommentsViewholder extends RecyclerView.ViewHolder {
         nameTv.setText(username);
         timeTv.setText(time);
         ansTv.setText(comment);
-        Picasso.get().load(url).into(imageView);
+        Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).fit().into(imageView);
 
 
 

@@ -33,6 +33,7 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
@@ -102,7 +103,7 @@ public class AdapterChat extends  RecyclerView.Adapter<AdapterChat.MyHolder> {
             holder.li.setVisibility(View.VISIBLE);
             holder.la.setVisibility(View.GONE);
             holder.timeTv2.setText(dateTime);
-            Picasso.get().load(message).placeholder(R.drawable.acc).into(holder.image);
+            Picasso.get().load(message).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.acc).into(holder.image);
         }
         if (type.equals("a")){
             holder.lt.setVisibility(View.GONE);

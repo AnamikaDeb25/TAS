@@ -21,6 +21,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
@@ -47,7 +48,7 @@ public class ImageViewOfChat extends AppCompatActivity {
 
 
         String url = getIntent().getStringExtra("url");
-        Picasso.get().load(url).placeholder(R.drawable.ic_baseline_image_24).into(imageView);
+        Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).fit().networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.ic_baseline_image_24).into(imageView);
 
 
         btnback.setOnClickListener(new View.OnClickListener() {

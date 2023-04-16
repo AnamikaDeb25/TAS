@@ -17,6 +17,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
@@ -53,10 +54,10 @@ public class ImageViewofprofilepic extends AppCompatActivity {
                     String name = "" + ds.child("name").getValue();
                     gethisname.setText(name);
                     try {
-                        Picasso.get().load(image).placeholder(R.drawable.acc).into(imageView);
+                        Picasso.get().load(image).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.acc).into(imageView);
                     }
                     catch (Exception e){
-                        Picasso.get().load(R.drawable.acc).into(imageView);
+                        Picasso.get().load(R.drawable.acc).networkPolicy(NetworkPolicy.OFFLINE).fit().into(imageView);
                     }
                 }
             }

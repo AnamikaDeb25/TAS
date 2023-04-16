@@ -59,6 +59,7 @@ import com.google.firebase.storage.UploadTask;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 import com.jpardogo.android.googleprogressbar.library.GoogleProgressBar;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
@@ -160,6 +161,8 @@ public class ChatActivity extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager =  new LinearLayoutManager(this);
         linearLayoutManager.setStackFromEnd(true);
         recyclerView.setHasFixedSize(true);
+        recyclerView.setItemViewCacheSize(20);
+        recyclerView.setDrawingCacheEnabled(true);
         recyclerView.setLayoutManager(linearLayoutManager);
         DatabaseReference reference = database.getReference("Chats");
         reference.keepSynced(true);
@@ -292,10 +295,10 @@ public class ChatActivity extends AppCompatActivity {
                     }
 
                     try {
-                        Picasso.get().load(image).placeholder(R.drawable.acc).into(profileIv);
+                        Picasso.get().load(image).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.acc).into(profileIv);
                     }
                     catch (Exception e){
-                        Picasso.get().load(R.drawable.acc).into(profileIv);
+                        Picasso.get().load(R.drawable.acc).networkPolicy(NetworkPolicy.OFFLINE).fit().into(profileIv);
                     }
                 }
             }

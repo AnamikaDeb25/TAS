@@ -49,6 +49,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.jpardogo.android.googleprogressbar.library.GoogleProgressBar;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
@@ -193,7 +194,7 @@ public class PostActivity extends AppCompatActivity {
                         fileOutputStream.flush();
                         fileOutputStream.close();
                         pic = Uri.fromFile(finalfile);
-                        Picasso.get().load(pic).into(imageView);
+                        Picasso.get().load(pic).networkPolicy(NetworkPolicy.OFFLINE).fit().into(imageView);
                         imageView.setVisibility(View.VISIBLE);
                         type = "iv";
                     } catch (IOException e) {

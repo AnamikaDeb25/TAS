@@ -15,6 +15,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 
@@ -47,8 +48,8 @@ public class AdapterPost extends RecyclerView.ViewHolder {
         tv_comment = itemView.findViewById(R.id.tv_comment_post);
         sharebtn = itemView.findViewById(R.id.sharetbutton_posts);
         tv_share = itemView.findViewById(R.id.tv_share_post);
-            Picasso.get().load(url).placeholder(R.drawable.pict).into(imageViewprofile);
-            Picasso.get().load(postUri).placeholder(R.drawable.ic_baseline_image_24).into(iv_post);
+            Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.pict).into(imageViewprofile);
+            Picasso.get().load(postUri).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.ic_baseline_image_24).into(iv_post);
             tv_time.setText(time);
             tv_nameprofile.setText(name);
 
