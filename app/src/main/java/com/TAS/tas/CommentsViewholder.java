@@ -49,7 +49,7 @@ public class CommentsViewholder extends RecyclerView.ViewHolder {
         nameTv.setText(username);
         timeTv.setText(time);
         ansTv.setText(comment);
-        Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).fit().into(imageView);
+        Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).into(imageView);
 
 
 

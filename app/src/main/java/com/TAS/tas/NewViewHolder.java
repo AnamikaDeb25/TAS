@@ -24,7 +24,7 @@ public class NewViewHolder  extends RecyclerView.ViewHolder {
         texttv = itemView.findViewById(R.id.text_newtv);
         nametv = itemView.findViewById(R.id.name_newtv);
         imageView = itemView.findViewById(R.id.iv_new);
-        Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).fit().into(imageView);
+        Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).into(imageView);
         nametv.setText(name);
         texttv.setText(text);
 

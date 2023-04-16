@@ -55,7 +55,7 @@ public class AdapterAnnouncement extends RecyclerView.Adapter<AdapterAnnouncemen
         holder.announcement.setText(announcement);
 
         try {
-            Picasso.get().load(userImage).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.pict).into(holder.pic);
+            Picasso.get().load(userImage).networkPolicy(NetworkPolicy.OFFLINE).placeholder(R.drawable.pict).into(holder.pic);
         }
         catch (Exception e){ }
 

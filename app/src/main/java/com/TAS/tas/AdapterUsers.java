@@ -53,7 +53,7 @@ public class AdapterUsers extends RecyclerView.Adapter<AdapterUsers.MyHolder>{
         holder.mEmailTv.setText(userEmail);
         //  holder.mSchool.setText(userSchool);
         try {
-            Picasso.get().load(userImage).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.pict).into(holder.mAvatarTv);
+            Picasso.get().load(userImage).networkPolicy(NetworkPolicy.OFFLINE).placeholder(R.drawable.pict).into(holder.mAvatarTv);
         }
         catch (Exception e){ }
         checkIsBlocked(hisUID,holder,position);

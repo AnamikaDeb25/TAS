@@ -136,7 +136,7 @@ public class CommentsActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         checkOnlineStatus("online");
-        Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.pict).into(usernameImageview);
+        Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).placeholder(R.drawable.pict).into(usernameImageview);
         usernameTextview.setText(name);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();

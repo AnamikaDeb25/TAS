@@ -54,10 +54,10 @@ public class ImageViewofprofilepic extends AppCompatActivity {
                     String name = "" + ds.child("name").getValue();
                     gethisname.setText(name);
                     try {
-                        Picasso.get().load(image).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.acc).into(imageView);
+                        Picasso.get().load(image).networkPolicy(NetworkPolicy.OFFLINE).placeholder(R.drawable.acc).into(imageView);
                     }
                     catch (Exception e){
-                        Picasso.get().load(R.drawable.acc).networkPolicy(NetworkPolicy.OFFLINE).fit().into(imageView);
+                        Picasso.get().load(R.drawable.acc).networkPolicy(NetworkPolicy.OFFLINE).into(imageView);
                     }
                 }
             }

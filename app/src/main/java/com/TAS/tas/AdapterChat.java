@@ -103,7 +103,7 @@ public class AdapterChat extends  RecyclerView.Adapter<AdapterChat.MyHolder> {
             holder.li.setVisibility(View.VISIBLE);
             holder.la.setVisibility(View.GONE);
             holder.timeTv2.setText(dateTime);
-            Picasso.get().load(message).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.acc).into(holder.image);
+            Picasso.get().load(message).networkPolicy(NetworkPolicy.OFFLINE).placeholder(R.drawable.acc).into(holder.image);
         }
         if (type.equals("a")){
             holder.lt.setVisibility(View.GONE);

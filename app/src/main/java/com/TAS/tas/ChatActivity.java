@@ -295,10 +295,10 @@ public class ChatActivity extends AppCompatActivity {
                     }
 
                     try {
-                        Picasso.get().load(image).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.acc).into(profileIv);
+                        Picasso.get().load(image).networkPolicy(NetworkPolicy.OFFLINE).placeholder(R.drawable.acc).into(profileIv);
                     }
                     catch (Exception e){
-                        Picasso.get().load(R.drawable.acc).networkPolicy(NetworkPolicy.OFFLINE).fit().into(profileIv);
+                        Picasso.get().load(R.drawable.acc).networkPolicy(NetworkPolicy.OFFLINE).into(profileIv);
                     }
                 }
             }

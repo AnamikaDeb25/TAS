@@ -48,7 +48,7 @@ public class ImageViewOfChat extends AppCompatActivity {
 
 
         String url = getIntent().getStringExtra("url");
-        Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).fit().networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.ic_baseline_image_24).into(imageView);
+        Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).placeholder(R.drawable.ic_baseline_image_24).into(imageView);
 
 
         btnback.setOnClickListener(new View.OnClickListener() {

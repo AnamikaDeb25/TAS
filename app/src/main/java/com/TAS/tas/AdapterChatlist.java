@@ -116,9 +116,9 @@ public class AdapterChatlist extends RecyclerView.Adapter<AdapterChatlist.MyHold
             holder.lastMessageTime.setVisibility(View.VISIBLE);
         }
         try{
-            Picasso.get().load(userImage).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.pict).into(holder.profileIv);
+            Picasso.get().load(userImage).networkPolicy(NetworkPolicy.OFFLINE).placeholder(R.drawable.pict).into(holder.profileIv);
         }catch (Exception e){
-            Picasso.get().load(R.drawable.pict).networkPolicy(NetworkPolicy.OFFLINE).fit().into(holder.profileIv);
+            Picasso.get().load(R.drawable.pict).networkPolicy(NetworkPolicy.OFFLINE).into(holder.profileIv);
         }
         if (userDataList.get(position).getOnlineStatus().equals("online")){
             holder.onlineStatusIv.setImageResource(R.drawable.circle_online);

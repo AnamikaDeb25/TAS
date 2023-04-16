@@ -227,7 +227,7 @@ public class EditProfilestu extends AppCompatActivity {
                     String Email = userprofile.email;
                     String Phn = userprofile.phno;
                     String link = userprofile.getImage();
-                    Picasso.get().load(link).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.pict).into(img);
+                    Picasso.get().load(link).networkPolicy(NetworkPolicy.OFFLINE).placeholder(R.drawable.pict).into(img);
                     nname.setText(Name);
                     eemail.setText(Email);
                     pphone.setText("Mobile: "+Phn);

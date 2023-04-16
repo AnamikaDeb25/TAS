@@ -138,10 +138,10 @@ public class home extends Fragment implements View.OnClickListener {
                 if (userprofile != null) {
                     String url = userprofile.image;
                     try {
-                        Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).fit().placeholder(R.drawable.pict).into(circleImageView);
+                        Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).placeholder(R.drawable.pict).into(circleImageView);
                     }
                     catch (Exception e){
-                        Picasso.get().load(R.drawable.pict).networkPolicy(NetworkPolicy.OFFLINE).fit().into(circleImageView);
+                        Picasso.get().load(R.drawable.pict).networkPolicy(NetworkPolicy.OFFLINE).into(circleImageView);
                     }
                 }
             }
