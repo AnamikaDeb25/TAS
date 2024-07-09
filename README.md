@@ -1,4 +1,4 @@
-# TAS (Tripura Art Society)
+# TAS
 
 ## About ##
 Welcome to TAS, the ultimate social media platform designed to bring teachers and students together in a vibrant, interactive community. Whether you're here to share your creativity, connect with like-minded individuals, or find inspiration, TAS has got you covered.
